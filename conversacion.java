@@ -17,8 +17,8 @@ public class conversacion {
         System.out.printf("tu nombre es %s tu edad es %d y tu numero de telefono es %d", nombre, edad, tlf);
 
 
-        
 
+        
 
 
 
