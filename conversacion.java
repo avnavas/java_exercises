@@ -6,6 +6,7 @@ public class conversacion {
 
         System.out.println("cual es tu nombre");
         String nombre = entrada.nextLine();
+
         System.out.println("tu nombre es " + nombre);
 
 
