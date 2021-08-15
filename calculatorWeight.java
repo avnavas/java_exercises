@@ -2,37 +2,46 @@ import javax.swing.*;
 import java.util.Scanner;
 
 /*
-que pregunte si eres hombre o mujer
-que pregunte los datos
+ejercicio
+que pregunte
+    hombre o mujer
     altura
     peso
 
 te diga cuantos kilos te sobran
-    hombre peso ideal altura - 10kg
-    mujer peso ideal altura - 10kg
+    hombre peso ideal altura - 105kg
+    mujer peso ideal altura - 110
 
-desarrolla el calculo
-    180-(100+10) = kg
 */
 
 public class calculatorWeight {
     public static void main(String[] args) {
 
         String sexo;
+        int altura;
+        int peso;
 
+        //recoleccion de datos
         do{
             sexo = JOptionPane.showInputDialog("introduce tu sexo (h/m)");
         }
         while(sexo.equalsIgnoreCase("h")== false && sexo.equalsIgnoreCase("M")== false);
 
-        int altura = Integer.parseInt(JOptionPane.showInputDialog("Introduce tu altura en cm"));
 
-        int peso = Integer.parseInt(JOptionPane.showInputDialog("tu peso"));
+        do{
+            altura = Integer.parseInt(JOptionPane.showInputDialog("Introduce tu altura en cm"));
+        }
+        while(altura <50 || altura > 250 );
 
-        System.out.println(sexo);
+
+        do{
+            peso = Integer.parseInt(JOptionPane.showInputDialog("Introduce tu altura en cm"));
+        }
+        while(peso <0 || peso > 500 );
 
 
 
+        // resultado de operaciones
         if (sexo.equals("h")) {
 
             int pesoIdealHombre = altura - (100+5);
